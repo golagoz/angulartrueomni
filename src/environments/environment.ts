@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production              : true, 
+  hmr                     : false,
+  cardUrl                 :'http://localhost:23668/api/trueomni/',
 };
 
 /*

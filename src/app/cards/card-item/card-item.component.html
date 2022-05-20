@@ -1,0 +1,36 @@
+
+
+    <div class="tp-wrapper col">
+      <div class="tp-box" [@animateStagger]="flip">
+        
+        <button mat-fab color="primary"  class="btn"(click)="more()"  matTooltip="Ver más">
+         Click me!
+        </button>
+       
+
+        <div class="tp-box__side tp-box__front">
+          <div class="fuse-widget-front" [ngClass]="item.containDeals ? 'light-green-700': 'grey-300'">
+          </div>
+        </div>
+        <div class="tp-box__side tp-box__back">
+          <div fxLayout="row" fxLayoutAlign="space-around center" >
+            <label >
+              listingID: 
+            </label>
+            <span>
+              {{summary.listingID}}
+            </span>
+          </div>
+          
+          <div fxLayout="row" fxLayoutAlign="space-around center" >
+            <label >
+              Email: 
+            </label>
+            <span>
+              {{summary.email}}
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
