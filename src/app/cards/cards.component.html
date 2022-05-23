@@ -2,10 +2,9 @@
     <div class="workstations" fxLayout="row wrap" [@animateStagger]="{value:'50'}">
         <div class="tp-box" fxFlex="100" fxFlex.gt-xs="33" fxFlex.gt-sm="20" *ngFor="let item of cards">
 
-            <span>
-                {{item.company}}
-            </span>
-            <app-card-item [item]="item">
+          
+            <app-card-item [item]="item" [name]="item.company">
+           
             </app-card-item>
 
         </div>

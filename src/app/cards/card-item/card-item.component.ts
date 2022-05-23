@@ -21,6 +21,7 @@ import { CardService } from 'src/app/card.service';
 
 export class CardItemComponent implements OnInit {
   @Input() item: any;
+  @Input() name: string = "Ed";
   // @Input() teamId: number;
 
   summary : any;
@@ -31,12 +32,11 @@ export class CardItemComponent implements OnInit {
   ) { 
     this.summaryLoading = false;
     this.summary = [];
-
-    console.log(this.item);
     
   }
   flip: string = 'inactive';
-  ngOnInit(): void {
+  ngOnInit(): void {    
+    console.log(this.name);
   }
 
   toggleFlip() {

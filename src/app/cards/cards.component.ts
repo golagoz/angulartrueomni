@@ -50,9 +50,6 @@ export class CardsComponent implements OnInit, OnDestroy {
 
   private _assignCard(setAssign: any[])
   {
-    console.log("_assignCard");
-    console.log(setAssign);
-    
     this.cards.forEach( i => 
       i.setAssign = setAssign.find( a=> a.listingID === i.listingID));
 
